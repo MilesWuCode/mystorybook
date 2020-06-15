@@ -22,7 +22,7 @@
     },
   ```
 
-- <https://your-username.github.io/repository-name>
+- <https://mileswucode.github.io/mystorybook>
 
 ## Add Tailwind CSS
 
