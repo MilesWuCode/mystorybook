@@ -16,10 +16,11 @@
 - package.json
 
   ```json
+  {
     "scripts": {
-      // ...
-      "deploy-storybook": "storybook-to-ghpages"
-    },
+      "build-storybook": "build-storybook -s public"
+    }
+  }
   ```
 
 - <https://mileswucode.github.io/mystorybook>
