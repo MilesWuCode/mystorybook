@@ -92,3 +92,10 @@ module.exports = {
   ```js
   import "../src/css/tailwind.css";
   ```
+
+## Lazy Loading
+
+```js
+const ComponentName = () =>
+  import(/* webpackChunkName: "custom-chunk-name" */ "your-vue-file.vue");
+```

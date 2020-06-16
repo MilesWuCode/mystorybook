@@ -1,15 +1,18 @@
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import { action } from "@storybook/addon-actions";
+import { linkTo } from "@storybook/addon-links";
 
 import "../src/css/tailwind.css";
-import TestButton from '../src/components/test/TestButton.vue';
+// import TestButton from "../src/components/test/TestButton.vue";
+
+// lazy-loading
+const TestButton = () => import(/* webpackChunkName: "TestButton" */ "../src/components/test/TestButton.vue");
 
 export default {
-  title: 'TestButton',
-  component: TestButton,
+  title: "TestButton",
+  component: TestButton
 };
 
 export const Test = () => ({
   components: { TestButton },
-  template: '<TestButton />',
+  template: "<TestButton />"
 });
